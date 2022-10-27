@@ -13,7 +13,7 @@ time.clock = time.time
 def words(text): return re.findall(r'\w+', text.lower())
 
 
-txt = words(open('big.txt').read())
+txt = words(open('NLP/big.txt').read())
 #txt = txt + words(open('word.list.txt').read())
 # word_count = Counter(txt)
 word_count = Counter(words(open('big.txt').read()))
